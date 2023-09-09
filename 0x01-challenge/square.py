@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+"""This module defines a class Square"""
+
 
 class Square():
-
+    """Defines a Square"""
     width = 0
     height = 0
 
-
     def __init__(self, *args, **kwargs):
+        """Init method"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -20,6 +22,7 @@ class Square():
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
