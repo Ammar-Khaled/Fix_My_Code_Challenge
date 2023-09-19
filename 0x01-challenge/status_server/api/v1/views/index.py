@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Index view
 """
-from flask import jsonify, make_response
+from flask import jsonify
 
 from api.v1.views import app_views
 
@@ -10,4 +10,4 @@ from api.v1.views import app_views
 def status():
     """ Status of the web server
     """
-    return make_response(jsonify({"status": "OK"}), 404)
+    return jsonify({"status": "OK"})
